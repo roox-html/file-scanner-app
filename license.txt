@@ -1,0 +1,10 @@
+RooxScanner License Agreement
+
+This software scans your selected drives or folders to display the largest and smallest files. No data is transmitted or stored externally. You retain full control over your files. 
+
+By installing RooxScanner, you agree:
+- You use the software at your own risk.
+- The developers are not responsible for any damages, data loss, or issues caused by its use.
+- No personal or private data is collected or sent anywhere.
+
+You must accept these terms to proceed with installation.
