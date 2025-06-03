@@ -1,0 +1,49 @@
+{
+  "name": "rooxscanner",
+  "version": "1.0.1",
+  "description": "Scan and display top 10 largest and smallest files on a drive or folder",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder"
+  },
+  "author": "Your Name",
+  "license": "SEE LICENSE IN license.txt",
+  "devDependencies": {
+    "electron": "^28.3.3",
+    "electron-builder": "^26.0.0"
+  },
+  "build": {
+    "appId": "com.roox.scanner",
+    "productName": "RooxScanner",
+    "copyright": "Copyright © 2025 You",
+    "directories": {
+      "buildResources": "build",
+      "output": "dist"
+    },
+    "files": [
+      "index.html",
+      "main.js",
+      "renderer.js",
+      "style.css",
+      "preload.js",
+      "package.json"
+    ],
+    "extraResources": [
+      "license.txt"
+    ],
+    "win": {
+      "target": "nsis",
+      "icon": "build/icon.ico"
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "RooxScanner",
+      "license": "license.txt"
+    }
+  }
+}

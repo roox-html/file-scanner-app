@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline';" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>RooxScanner - Drive File Scanner</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>RooxScanner</h1>
+    <p>Select a drive or folder to scan for largest and smallest files.</p>
+    
+    <button id="selectBtn">Select Drive/Folder</button>
+    <p id="selectedPath" class="selected-path">No folder selected</p>
+
+    <div class="progress-container" hidden>
+      <progress id="progressBar" value="0" max="100"></progress>
+      <span id="progressPercent">0%</span>
+    </div>
+
+    <div class="results" hidden>
+      <h2>Top 10 Largest Files</h2>
+      <ul id="largestFiles"></ul>
+
+      <h2>Top 10 Smallest Files</h2>
+      <ul id="smallestFiles"></ul>
+    </div>
+
+    <button id="resetBtn" disabled>Reset</button>
+  </div>
+
+  <script src="renderer.js"></script>
+</body>
+</html>
